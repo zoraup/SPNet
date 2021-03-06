@@ -1,3 +1,6 @@
+# This code is modified from https://github.com/wyharveychen/CloserLookFewShot
+
+
 import backbone
 import torch
 import torch.nn as nn
