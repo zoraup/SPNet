@@ -65,8 +65,6 @@ class MetaTemplate(nn.Module):
         avg_loss=0
         for i, (x,_ ) in enumerate(train_loader):
             self.n_query = x.size(1) - self.n_support           
-            if self.change_way:
-                self.n_way  = x.size(0)
             optimizer.zero_grad()
             ###### add calibration loss ########################################################################
             loss1, loss2, loss3 = self.set_forward_loss( x )
@@ -86,8 +84,6 @@ class MetaTemplate(nn.Module):
         iter_num = len(test_loader) 
         for i, (x,_) in enumerate(test_loader):
             self.n_query = x.size(1) - self.n_support
-            if self.change_way:
-                self.n_way  = x.size(0)
             correct_this, count_this = self.correct(x)
             acc_all.append(correct_this/ count_this*100  )
 
