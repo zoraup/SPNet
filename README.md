@@ -1,3 +1,3 @@
-# Pytorch-RESISC-FSL-zorau-up-2021
+# SPNet
 This is the code for the paper Dual Prototype netwrok for few-shot remote sensing image scene classification.
 More details will be updated later...
