@@ -1,3 +1,3 @@
 # SPNet
-This is the code for the paper Dual Prototype netwrok for few-shot remote sensing image scene classification.
+This is the code for the paper Siamese-Prototype Netwrok for Few-Shot Remote Sensing Image Scene Classification.
 More details will be updated later...
